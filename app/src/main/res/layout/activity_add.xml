@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primarycolor"
+    android:orientation="vertical"
+    tools:context=".activity.profile.AddressActivity">
+
+
+
+        <include android:id="@+id/toolbar"
+            layout="@layout/primarybackground_toobar" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recycler_addedAdress"/>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/add_new_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="25dp"
+        app:cardCornerRadius="@dimen/corner_radious">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="+ Add New Address"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="12dp"
+                android:textColor="@color/primarycolor"
+                android:textSize="15sp"/>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Pentathlon</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="star">★ </string>
+    <string name="u2605">★ </string>
+    <string name="rupee">₹ </string>
+    <string name="upload_photos_related_to_the_product_like_unboxing_product_usages_etc">Upload photos related to the product like Unboxing, Product Usages, etc.</string>
+    <string name="server_error">Server_error</string>
+</resources>

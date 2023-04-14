@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="_18dp">18dp</dimen>
+    <dimen name="signupbox">52dp</dimen>
+    <dimen name="textsixze">10dp</dimen>
+    <dimen name="_10dp">10dp</dimen>
+    <dimen name="otpboxheight">55dp</dimen>
+    <dimen name="corner_radious">8dp</dimen>
+    <dimen name="headersize">15sp</dimen>
+
+
+</resources>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="5dp"
+            app:cardCornerRadius="6dp">
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/demoimg" />
+        </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            android:padding="@dimen/_10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/product_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/roboto_regular"
+                    android:maxLines="2"
+                    android:text="Product name"
+                    android:textColor="@color/primarycolor"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/product_size"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="size:8"
+                        android:textColor="@color/primarycolor"
+                        android:textSize="@dimen/_10dp" />
+
+                    <TextView
+                        android:id="@+id/product_color"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="black and white"
+                        android:textColor="@color/primarycolor"
+                        android:textSize="@dimen/_10dp" />
+                </LinearLayout>
+<include layout="@layout/common_pricing_layout"></include>
+<!--                <LinearLayout-->
+<!--                    android:id="@+id/ll_paid"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_below="@+id/product_name"-->
+<!--                    android:layout_marginTop="5dp"-->
+<!--                    android:orientation="horizontal">-->
+
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:fontFamily="@font/roboto_bold"-->
+<!--                        android:text="@string/rupee"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:textSize="14dp" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/txt_discount_price"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:fontFamily="@font/roboto_bold"-->
+<!--                        android:text="232323"-->
+<!--                        android:textColor="@color/primarycolor"-->
+<!--                        android:textSize="14dp" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/txt_actual_price"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginLeft="2dp"-->
+<!--                        android:fontFamily="@font/roboto_bold"-->
+<!--                        android:text="\u20B9 333333"-->
+
+<!--                        android:textColor="@color/primarycolor"-->
+<!--                        android:textSize="10dp" />-->
+
+<!--                </LinearLayout>-->
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="@dimen/_10dp"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:layout_gravity="center"
+    android:gravity="center_vertical">
+    <ImageView
+        android:id="@+id/img_add"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/group_1953"/>
+    <TextView
+        android:layout_marginStart="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:fontFamily="@font/roboto_regular"
+        android:textSize="14sp"/>
+    <ImageView
+        android:id="@+id/img_reduce"
+        android:layout_marginStart="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/group_1954"/>
+
+</LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+
+                    >
+
+                    <TextView
+                        android:id="@+id/remove_item"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:drawableStart="@drawable/remove"
+                        android:drawablePadding="5dp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:gravity="center"
+                        android:text="Remove"
+                        android:textColor="@color/primarycolor"
+                        android:textSize="12dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

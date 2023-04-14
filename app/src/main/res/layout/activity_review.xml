@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/primarycolor"
+    tools:context=".activity.profile.ReviewActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:gravity="center_vertical"
+        android:padding="@dimen/_10dp"
+        android:orientation="horizontal"
+        android:background="@color/white">
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/group_139"
+            android:backgroundTint="@color/primarycolor"
+            android:padding="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/headersize"
+            android:text="Review Product"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/primarycolor"
+            android:fontFamily="@font/roboto_regular"/>
+    </LinearLayout>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/_10dp">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/corner_radious">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/_10dp">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    app:cardCornerRadius="@dimen/corner_radious">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/demoimg"
+                        android:scaleType="fitXY"/>
+                </androidx.cardview.widget.CardView>
+                <LinearLayout
+                    android:padding="@dimen/_10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/product_name"
+                        android:text="Product Name"
+                        android:textColor="@color/primarycolor"
+                        android:textSize="13sp"
+                        android:fontFamily="@font/roboto_regular"/>
+                    <RatingBar
+                        android:id="@+id/rating_bar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:progressBackgroundTint="@color/orange"
+                        android:progressTint="@color/orange"
+                        style="?android:attr/ratingBarStyleIndicator"
+                        android:scaleX=".5"
+                        android:rating="3.5"
+
+                        android:scaleY=".5"
+                        android:transformPivotX="0dp"
+                        android:transformPivotY="0dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/roboto_regular"
+                android:text="Add Photo"/>
+
+            <TextView
+                android:id="@+id/add_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Photo"
+                android:layout_marginTop="5dp"
+                android:paddingVertical="10dp"
+                android:drawablePadding="5dp"
+                android:paddingHorizontal="40dp"
+                android:textColor="@color/primarycolor"
+                android:fontFamily="@font/roboto_medium"
+                android:background="@drawable/roundedsolidwhite"
+                app:drawableStartCompat="@drawable/review_add_photo" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="11sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/roboto_light"
+                android:layout_marginTop="10dp"
+                android:text="@string/upload_photos_related_to_the_product_like_unboxing_product_usages_etc"/>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="@color/white"
+    android:textSize="14sp"
+    android:layout_marginTop="25dp"
+    android:fontFamily="@font/roboto_regular"
+    android:text="Write a Review"/>
+
+            <EditText
+                android:id="@+id/et_review"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="How is the Product? What do you like? What do you hate?"
+                android:inputType="textMultiLine"
+                android:lines="10"
+                android:textColorHint="@color/white"
+                android:textSize="12dp"
+                android:padding="@dimen/_10dp"
+                android:gravity="top"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/loginwithphone"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:id="@+id/recycler_image"/>
+
+            <!--            <EditText-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:paddingVertical="55dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:hint="How is the Product? What do you like? What do you hate?"-->
+<!--                android:textColorHint="@color/white"-->
+<!--                android:fontFamily="@font/roboto_regular"-->
+<!--                android:textSize="12dp"-->
+<!--                android:gravity="start"-->
+<!--                android:background="@drawable/loginwithphone" />-->
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+
+</LinearLayout>

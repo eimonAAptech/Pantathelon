@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/primarycolor"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+
+    <FrameLayout
+        android:id="@+id/ll_change_dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/border_img"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/whiteround" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_dp"
+            android:layout_width="66dp"
+            android:layout_height="66dp"
+            android:layout_gravity="center"
+            android:src="@drawable/demoimg"
+            android:visibility="visible"
+            app:civ_border_color="@color/primarycolor"
+            app:civ_border_width="2dp" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/txt_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_regular"
+        android:gravity="center"
+        android:text="FoootBall"
+        android:textColor="@color/white"
+        android:textSize="12dp" />
+
+</LinearLayout>

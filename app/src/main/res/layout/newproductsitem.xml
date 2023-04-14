@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="140dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    android:background="@color/white"
+    android:orientation="vertical"
+    app:cardCornerRadius="@dimen/corner_radious">
+    <RelativeLayout
+        android:id="@+id/rl_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <ImageView
+
+        android:id="@+id/img_product"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:scaleType="fitXY" />
+
+
+<RelativeLayout
+    android:layout_below="@+id/img_product"
+    android:padding="6dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/product_name"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:fontFamily="@font/roboto_regular"
+            android:text=""
+            android:textColor="@color/primarycolor"
+            android:textSize="11dp" />
+
+        <LinearLayout
+            android:id="@+id/ll_paid"
+            android:layout_below="@+id/product_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_bold"
+                android:text="@string/rupee"
+                android:textColor="@color/black"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/txt_discount_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_bold"
+                android:text="232323"
+                android:textColor="@color/primarycolor"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/txt_actual_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="\u20B9 333333"
+
+                android:textColor="@color/primarycolor"
+                android:textSize="8dp" />
+            <TextView
+                android:id="@+id/txt_star"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="@string/u2605"
+                android:layout_toRightOf="@id/ll_paid"
+                android:textColor="@color/orange"
+                android:textSize="9dp"
+                android:layout_below="@id/product_name"/>
+
+        </LinearLayout>
+
+</RelativeLayout>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
